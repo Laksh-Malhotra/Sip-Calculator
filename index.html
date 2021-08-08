@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f445f7c3fc.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>SIP Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <form name="customForm" class="form-container">
+        <h1 class="heading">SIP CALCULATOR</h1>
+        <div class="radio-group">
+          <input type="radio" name="option" id="Sip" value="SIP" checked />
+          <label for="SIP">SIP</label>
+          <label for="">&nbsp;&nbsp;&nbsp;</label>
+          <input type="radio" name="option" id="Lumpsum" value="Lumpsum" />
+          <label for="Lumpsum">Lumpsum</label>
+        </div>
+        <div class="input-container">
+          <label for="Investments">How much do you want to invest ?</label>
+          <div class="suffix-input">
+            <input type="text" id="investments" />
+            <span class="suffix">Rs.</span>
+          </div>
+        </div>
+        <div class="input-container">
+          <label for="year">Investment Period</label>
+          <div class="suffix-input">
+            <input type="text" id="year" />
+            <span class="suffix">Years</span>
+          </div>
+        </div>
+        <div class="input-container">
+          <label for="Rate">Expected Annual Returns (%)</label>
+          <div class="suffix-input">
+            <input type="text" id="rate" />
+            <span class="suffix">%</span>
+          </div>
+        </div>
+        <div>
+          <button class="btn" type="submit">Calculate</button>
+        </div>
+      </form>
+      <section class="results">
+        <div class="row">
+          <div>
+            <p>Invested Amount</p>
+            <h1 class="a_value">₹ XXXX</h1>
+          </div>
+          <div>
+            <p>Est. Returns</p>
+            <h1 class="r_value">₹ XXXX</h1>
+          </div>
+          <div>
+            <p>Total Value</p>
+            <h1 class="f_value">₹ XXXX</h1>
+          </div>
+        </div>
+        <div class="chart-container">
+          <canvas id="myChart"></canvas>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="socials">
+        <a
+          href="https://www.instagram.com/laksh__malhotra"
+          target="_blank"
+          class="social"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          href="https://github.com/Laksh-Malhotra"
+          target="_blank"
+          class="social"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://codepen.io/laksh2104" target="_blank" class="social"
+          ><i class="fab fa-codepen"></i
+        ></a>
+        <a
+          href="https://twitter.com/Laksh__Malhotra"
+          target="_blank"
+          class="social"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
